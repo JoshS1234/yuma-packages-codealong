@@ -51,7 +51,6 @@ const alterImageURL = (e: Event) => {
   const target = e.target as HTMLInputElement;
 
   dogImage.src = target.value;
-  onImageLoad();
   const palette = colorThief.getPalette(dogImage);
   const confettiColArr = palette.map((color: Color) => {
     return `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
